@@ -1,5 +1,5 @@
 FROM alpine
-COPY output/* /usr/local/bin/
+COPY binaries/* /usr/local/bin/
 COPY start.sh /
-VOLUME ["/etc/yggdrasil/"]
+VOLUME ["/config"]
 CMD ["/start.sh"]
